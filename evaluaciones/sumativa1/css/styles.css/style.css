@@ -1,0 +1,181 @@
+/* Reset básico y tipografía */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+  padding:2rem 1rem;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #12108c9f; /* Azul profundo */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #F5F5F5; /* Blanco */
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #F0C808; /* Amarillo mostaza */
+}
+
+
+/* Encabezado */
+header {
+  background-color: #1B1F3B;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* Presentación visual */
+.presentacion img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+
+/* Sección de talleres */
+.talleres {
+  margin: 2rem 0;
+}
+
+.talleres h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background-color: #12108c9f;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem;
+  max-width: 300px;
+  flex: 1 1 250px;
+}
+
+.tarjeta h3 {
+  color: #1B1F3B;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  margin-bottom: 0.5rem;
+}
+
+/* Pie de página */
+footer {
+  background-color: #1e1e2f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.contacto {
+  background-color: #F5F5F5; /* Gris claro */
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.contacto h2 {
+  text-align: center;
+  color: #D72638; /* Rojo carmesí */
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold;
+}
+
+input, select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #D72638;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b91e2b;
+}
+
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive: pantalla pequeña */
+@media (max-width: 768px) {
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
