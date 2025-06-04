@@ -7,15 +7,15 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ffffff   ;
+  color: #0634a0;
   line-height: 1.6;
   padding:2rem 1rem;
 }
 
 /* Barra de navegación */
 .navbar {
-  background-color: #12108c9f; /* Azul profundo */
+  background-color: #0634a0  ;
   padding: 1rem 0;
   text-align: center;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .navbar a {
-  color: #F5F5F5; /* Blanco */
+  color: #9fecff  ;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -39,13 +39,13 @@ body {
 }
 
 .navbar a:hover {
-  color: #F0C808; /* Amarillo mostaza */
+  color: #F0C808;
 }
 
 
 /* Encabezado */
 header {
-  background-color: #1B1F3B;
+  background-color: #68b6ef ;
   color: #F5F5F5;
   text-align: center;
   padding: 2rem 1rem;
@@ -90,9 +90,9 @@ header p {
 }
 
 .tarjeta {
-  background-color: #12108c9f;
+  background-color: #9fecff    ;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px rgba(164, 38, 38, 0.1);
   padding: 1.2rem;
   max-width: 300px;
   flex: 1 1 250px;
@@ -109,7 +109,7 @@ header p {
 
 /* Pie de página */
 footer {
-  background-color: #1e1e2f;
+  background-color: #0634a0;
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -118,7 +118,7 @@ footer {
 }
 
 .contacto {
-  background-color: #F5F5F5; /* Gris claro */
+  background-color: #9fecff;
   padding: 2rem;
   max-width: 600px;
   margin: 2rem auto;
@@ -129,7 +129,7 @@ footer {
 
 .contacto h2 {
   text-align: center;
-  color: #D72638; /* Rojo carmesí */
+  color: #D72638; 
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1rem;
 }

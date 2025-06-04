@@ -1,4 +1,4 @@
-# Curso de programación Front-end
+# Curso de programación Front-end 
 
 <!--Repositorio del curso de programación Front-end  -->
 
@@ -38,43 +38,51 @@
     <h2>Talleres disponibles</h2>
     <div class="tarjetas">
       <article class="tarjeta">
+        <img src="evaluaciones/sumativa1/assets/img/teatro.jpeg" alt="img teatro">
         <h3>Teatro</h3>
-        <p>Desarrolla la creatividad, la autoexpresión, la comunicación verbal y no verbal, la capacidad de trabajar en equipo, la empatía y la confianza en uno mismo. Además, se aprenden técnicas específicas como la improvisación, la creación de personajes, la exploración del espacio escénico y la interpretación de textos dramáticos.</p>
+        <p>Desarrolla la creatividad, la autoexpresión, la comunicación verbal y no verbal, la empatía y la confianza en uno mismo. Además, se aprenden la improvisación, la creación de personajes, la exploración del espacio escénico y la interpretación de textos dramáticos.</p>
         <p><strong>Horario:</strong> Martes y Jueves 17:00 - 18:30</p>
       </article>
       <article class="tarjeta">
+        <img src="evaluaciones/sumativa1/assets/img/Danza.jpeg" alt="img Danza">
         <h3>Danza</h3>
-        <p>Aprenderas técnicas de baile, postura, coordinación, flexibilidad, y expresión emocional. También se enseñan coreografías y secuencias de movimientos, lo que te permite desarrollar tu capacidad de interpretación y expresión artística.</p>
+        <p>Aprenderas técnicas de baile, postura, coordinación, flexibilidad, y expresión emocional. También se enseñan coreografías y secuencias de movimientos, lo que te permite desarrollar tu capacidad de interpretación y expresión artística. </p>
         <p><strong>Horario:</strong> Lunes y Miércoles 18:00 - 19:30</p>
       </article>
       <article class="tarjeta">
+        <img src="evaluaciones/sumativa1/assets/img/Musica.jpeg" alt="img Música">
         <h3>Música urbana</h3>
-        <p>Aprenderas a crear música, desde los fundamentos hasta las técnicas más avanzadas, y a expresar tu creatividad a través de diferentes géneros musicales urbanos. También puedes aprender a bailar, expresarte a través de la danza, y desarrollar habilidades de improvisación. </p>
+        <p>Aprenderas a crear música, desde los fundamentos hasta las técnicas más avanzadas, y a expresar tu creatividad a través de diferentes géneros musicales urbanos. También expresarte a través de la danza, y desarrollar habilidades de improvisación. </p>
         <p><strong>Horario:</strong> Martes y Jueves 16:00 - 17:30</p>
       </article>
       <article class="tarjeta">
+        <img src="evaluaciones/sumativa1/assets/img/tenis 2.jpeg" alt="img Tenis">
         <h3>Tenis</h3>
-        <p>Aprenderas la técnica fundamental del deporte, incluyendo la forma correcta de agarrar la raqueta, el manejo de la pelota, los golpes básicos como el saque, el golpe de derecha y el revés, así como los desplazamientos en la cancha. Se desarrolla la coordinación, se mejora la capacidad física, y se aprenden las reglas del juego.</p>
+        <p>Aprenderas la técnica fundamental del deporte, incluyendo la forma correcta de agarrar la raqueta, el manejo de la pelota, los golpes básicos como el saque, el golpe de derecha y el revés, así como los desplazamientos en la cancha. </p>
         <p><strong>Horario:</strong> Miércoles y Viernes 15:00 - 16:30</p>
       </article>
       <article class="tarjeta">
+        <img src="evaluaciones/sumativa1/assets/img/Vóleibol.jpeg" alt="img Vóleibol">
         <h3>Vóleibol</h3>
         <p>Aprenderas habilidades técnicas, estratégicas y de trabajo en equipo. Se trabaja en el desarrollo de técnicas como el saque, el pase, el remate, el bloqueo y la recepción, además de aprender a comunicar y coordinarse con los compañeros. </p>
         <p><strong>Horario:</strong> Lunes y Miércoles 16:00 - 17:30</p>
       </article>
       <article class="tarjeta">
+        <img src="evaluaciones/sumativa1/assets/img/natacion.jpeg" alt="img natacion">
         <h3>Natación</h3>
-        <p>Aprenderas a nadar y a mejorar tus habilidades acuáticas. Esto puede incluir aprender a flotar, a nadar en diferentes estilos (como el crol, espalda, pecho y mariposa), a realizar giros y a respirar adecuadamente mientras nadas. También se pueden enseñar técnicas de seguridad en el agua y cómo ayudar a otros en caso de emergencia. </p>
+        <p>Aprenderas a nadar y a mejorar tus habilidades acuáticas. Esto puede incluir aprender a flotar, a nadar en diferentes estilos (como el crol, espalda, pecho y mariposa), a realizar giros y a respirar adecuadamente mientras nadas. </p>
         <p><strong>Horario:</strong> Sábados 09:00 - 11:00</p>
       </article>
       <article class="tarjeta">
+        <img src="evaluaciones/sumativa1/assets/img/Golf.jpeg" alt="img Golf">
         <h3>Golf</h3>
         <p>Aprenderas sobre la técnica del swing, las diferentes clases de palos y sus usos, así como estrategias y reglas del juego. También se puede aprender sobre la importancia de la postura, el agarre, la alineación y la velocidad del swing. Además, se puede fortalecer la mentalidad para el juego y aprender a disfrutar de la experiencia. </p>
         <p><strong>Horario:</strong> Domingos 10:00 - 12:00</p>
       </article>
       <article class="tarjeta">
+        <img src="evaluaciones/sumativa1/assets/img/futbol.jpeg" alt="img Fútbol">
         <h3>Fútbol </h3>
-        <p> las habilidades físicas y técnicas necesarias para jugar, así como las reglas, estrategias y el funcionamiento del equipo. Se centra en desarrollar fuerza, velocidad, potencia, agilidad y resistencia. </p>
+        <p> Las habilidades físicas y técnicas necesarias para jugar, así como las reglas, estrategias y el funcionamiento del equipo. Se centra en desarrollar fuerza, velocidad, potencia, agilidad y resistencia. </p>
         <p><strong>Horario:</strong> Miércoles y Sábados 18:00 - 19:30</p>
       </article>
     </div> 
