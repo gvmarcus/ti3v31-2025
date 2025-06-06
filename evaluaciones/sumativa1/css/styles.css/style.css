@@ -13,36 +13,6 @@ body {
   padding:2rem 1rem;
 }
 
-/* Barra de navegación */
-.navbar {
-  background-color: #0634a0  ;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar a {
-  color: #9fecff  ;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #F0C808;
-}
-
-
 /* Encabezado */
 header {
   background-color: #68b6ef ;
@@ -74,6 +44,13 @@ header p {
 /* Sección de talleres */
 .talleres {
   margin: 2rem 0;
+}
+
+.linea-separadora {
+  border: none;
+  height: 2px;
+  background-color: #000000;
+  margin: 15px 0;
 }
 
 .talleres h2 {
@@ -178,4 +155,57 @@ footer a {
     flex-direction: column;
     align-items: center;
   }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Sección de baner */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url(../../assets/img/arte.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Sección de baner */
+.hero1 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url(../../assets/img/Danza.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 2; }
 }
