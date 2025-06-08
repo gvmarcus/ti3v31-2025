@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff   ;
+  background-color: #ffffff;
   color: #0634a0;
   line-height: 1.6;
   padding:2rem 1rem;
@@ -15,7 +15,7 @@ body {
 
 /* Encabezado */
 header {
-  background-color: #68b6ef ;
+  background-color: #68b6ef;
   color: #F5F5F5;
   text-align: center;
   padding: 2rem 1rem;
@@ -32,14 +32,6 @@ header p {
   font-style: italic;
 }
 
-/* Presentación visual */
-.presentacion img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  border-radius: 12px;
-}
 
 /* Sección de talleres */
 .talleres {
@@ -67,12 +59,17 @@ header p {
 }
 
 .tarjeta {
-  background-color: #9fecff    ;
+  background-color: #9fecff;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(164, 38, 38, 0.1);
   padding: 1.2rem;
   max-width: 300px;
   flex: 1 1 250px;
+}
+
+.tarjeta img{
+    object-fit: cover;
+    width: 260px;
 }
 
 .tarjeta h3 {
@@ -157,39 +154,19 @@ footer a {
   }
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 /* Sección de baner */
 .hero {
   position: relative;
   width: 100%;
   height: 400px;
-  background-image: url(../../assets/img/arte.webp);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-image:url(/evaluaciones/sumativa1/assets/img/baile.jpeg);
 }
-
-/* Sección de baner */
-.hero1 {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-image: url(evaluaciones/sumativa1/assets/img/Danza.jpeg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
 
 .overlay {
   position: absolute;
@@ -207,5 +184,5 @@ body {
 
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 2; }
+  to { opacity: 1; }
 }
