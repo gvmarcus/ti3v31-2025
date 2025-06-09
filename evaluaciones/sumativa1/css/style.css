@@ -164,10 +164,20 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   background-image:url(/evaluaciones/sumativa1/assets/img/baile.jpeg);
 }
 
+.hero2 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url(/evaluaciones/sumativa1/assets/img/Mujer-Bandera.jpg);
+}
 .overlay {
   position: absolute;
   width: 100%;
