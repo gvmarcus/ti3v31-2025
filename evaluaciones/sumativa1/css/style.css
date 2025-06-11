@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
+  background-color: #1B1F3B;
   color: #0634a0;
   line-height: 1.6;
   padding:2rem 1rem;
@@ -15,8 +15,8 @@ body {
 
 /* Encabezado */
 header {
-  background-color: #68b6ef;
-  color: #F5F5F5;
+  background-color: #D72638;
+  color: #1B1F3B;
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -59,7 +59,7 @@ header p {
 }
 
 .tarjeta {
-  background-color: #9fecff;
+  background-color: #F5F5F5;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(164, 38, 38, 0.1);
   padding: 1.2rem;
@@ -83,8 +83,8 @@ header p {
 
 /* Pie de página */
 footer {
-  background-color: #0634a0;
-  color: #fff;
+  background-color: #F5F5F5;
+  color: #2E2E2E;
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
@@ -92,7 +92,7 @@ footer {
 }
 
 .contacto {
-  background-color: #9fecff;
+  background-color: #F5F5F5;
   padding: 2rem;
   max-width: 600px;
   margin: 2rem auto;
@@ -142,7 +142,7 @@ button:hover {
 
 
 footer a {
-  color: #fff;
+  color: #2E2E2E;
   text-decoration: underline;
 }
 
@@ -164,7 +164,7 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image:url(/evaluaciones/sumativa1/assets/img/baile.jpeg);
+  background-image:url(https://ca-times.brightspotcdn.com/dims4/default/490a53c/2147483647/strip/false/crop/4882x2746+0+254/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe8%2Ff8%2Fd9f2cfe8a93b79f216073d68616f%2F97aa76831fa44afb81adc159db1d4c67);
 }
 
 .hero2 {
@@ -176,9 +176,24 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image:url(/evaluaciones/sumativa1/assets/img/Mujer-Bandera.jpg);
+  background-image:url(https://storage.googleapis.com/chile-travel-cdn/2021/08/Mujer-Bandera.jpg);
 }
+
 .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.overlay2 {
   position: absolute;
   width: 100%;
   height: 100%;
