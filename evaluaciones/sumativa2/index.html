@@ -60,7 +60,7 @@
       <article class="tarjeta">
         <img src="assets/img/Vóleibol.jpeg" alt="img Vóleibol">
         <h3>Vóleibol</h3>
-        <p>Aprenderas habilidades técnicas, estratégicas y de trabajo en equipo. Se trabaja en el desarrollo de técnicas como el saque, el pase, el remate, el bloqueo y la recepción, además de aprender a comunicar y coordinarse con los compañeros de equipo. </p>
+        <p>Aprenderas habilidades técnicas, estratégicas y de trabajo en equipo. Se trabaja en el desarrollo de técnicas como el saque, el remate, el bloqueo y la recepción, además de aprender a comunicar y coordinarse con los compañeros de equipo. </p>
           <div class="linea-separadora"></div> <!-- Línea personalizada -->
         <p><strong>Horario:</strong> Lunes y Miércoles 16:00 - 17:30</p>
       </article>
@@ -92,9 +92,15 @@
   <!-- Sección de contacto -->
   <section class="contacto">
     <h2>Formulario de Inscripción</h2>
-    <form>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+    <form id="formulario"></formid>
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombres" required>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+      <label for="rut">RUT (nnnnnnnn-n):</label>
+      <input type="text" id="rut" placeholder="Ej:12345678-9" required>
+      <label for="fechaNacimiento">Fecha de Nacimiento (dd/mm/aaaa):</label>
+      <input type="text" id="fechaNacimiento" placeholder="Ej:15/08/2005" required>
       <label for="correo">Correo electrónico:</label>
       <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
       <label for="taller">Taller de interés:</label>
@@ -109,9 +115,12 @@
         <option value="Golf">Golf</option>
         <option value="Fútbol">Fútbol</option>
       </select>
+      <label for="observaciones">Observaciones (opcional):</label>
+      <textarea id="observaciones" rows="4"></textarea>
       <button type="submit">Enviar inscripción</button>
     </form>
   </section>
+  <script src="js/script.js"></script>
  <!-- Sección de baner -->
     <div class="hero2">
     <div class="overlay">
