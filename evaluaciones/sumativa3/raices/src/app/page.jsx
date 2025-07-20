@@ -1,57 +1,68 @@
-"use client"; // 🔒 Esto indica que este componente corre en el cliente
+"use client";
 
-import { useEffect, useState } from "react";
-import InscripcionesList from "../components/InscripcionesList";
- // Ajusta el path si está en otro lugar
+import { useState, useEffect } from "react";
+import InscripcionCard from "../components/InscripcionCard";
 
 export default function Home() {
   const [inscripciones, setInscripciones] = useState([]);
+  const [talleres, setTalleres] = useState([]);
   const [cargando, setCargando] = useState(true);
 
   useEffect(() => {
     async function obtenerDatos() {
       try {
-       const [resInsc, resTall] = await Promise.all([
+        const [resInsc, resTall] = await Promise.all([
           fetch("https://ejemplo-firebase-657d0-default-rtdb.firebaseio.com/inscripciones.json"),
           fetch("https://ejemplo-firebase-657d0-default-rtdb.firebaseio.com/talleres.json"),
         ]);
- // 🔄 Convertimos la respuesta a formato JSON
+
         const [dataInsc, dataTall] = await Promise.all([
           resInsc.json(),
           resTall.json()
         ]);
 
-        // 🧹 Eliminamos valores nulos del arreglo (por si hay un índice [null])
-        const inscripcionesLimpias = (dataInsc || []).filter(Boolean);
-        const talleresLimpios = (dataTall || []).filter(Boolean);
+        // 👇 Esta es la corrección clave
+        const inscripcionesCompletas = dataInsc ? Object.values(dataInsc).filter(item => item !== null) : [];
+        const arregloTalleres = dataTall ? Object.values(dataTall).filter(item => item !== null) : [];
 
-        // 🔗 Relacionamos cada inscripción con el taller completo
-        const inscripcionesCompletas = inscripcionesLimpias.map((ins) => {
-          const tallerRelacionado = talleresLimpios.find(t => t.id === ins.taller);
-          return {
-            ...ins,               // Copiamos los datos de inscripción
-            taller: tallerRelacionado || {} // Añadimos el taller correspondiente
-          };
-        });
-
-        // 💾 Guardamos las inscripciones ya combinadas
         setInscripciones(inscripcionesCompletas);
+        setTalleres(arregloTalleres);
       } catch (error) {
         console.error("Error al cargar datos desde Firebase:", error);
       } finally {
-        setCargando(false); // 🔄 Ya terminó de cargar
+        setCargando(false);
       }
     }
 
     obtenerDatos();
   }, []);
 
+  const obtenerTallerPorId = (idTaller) => {
+    return talleres.find((taller) => taller.id === idTaller) || {};
+  };
+
   return (
-    <main className="min-h-screen bg-white p-4 text-gray-800">
+    <main className="min-h-screen bg-gray-100 p-8">
       {cargando ? (
-        <p className="text-center mt-10 text-gray-500">Cargando inscripciones...</p>
+        <p className="text-center text-gray-500">Cargando datos...</p>
       ) : (
-        <InscripcionesList inscripciones={inscripciones} />
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {inscripciones.map((inscripcion) => {
+            const taller = obtenerTallerPorId(inscripcion.taller);
+            const nombreCompleto = `${inscripcion.nombres || ''} ${inscripcion.apellidos || ''}`.trim();
+
+            return (
+              <InscripcionCard
+                key={inscripcion.id}
+                nombres={nombreCompleto || "Sin nombre"}
+                correo={inscripcion.correo || "Sin correo"}
+                tallerNombre={taller.nombre || "Taller no encontrado"}
+                tallerDescripcion={taller.descripcion || "Sin descripción"}
+                tallerProfesor={taller.profesor || "Sin profesor"}
+              />
+            );
+          })}
+        </div>
       )}
     </main>
   );

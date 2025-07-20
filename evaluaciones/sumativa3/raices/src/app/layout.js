@@ -1,41 +1,32 @@
-// app/layout.js o app/layout.tsx
-
-// ✅ Importamos la fuente Montserrat desde Google Fonts
+// Importamos la fuente Montserrat desde Google Fonts
 import { Montserrat } from "next/font/google";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-// ✅ Importamos los componentes reutilizables
-import Header from './components/Header';
-import Footer from './components/Footer';
+// Importamos los estilos globales definidos en globals.css
+import '../styles/globals.css';
 
-// ✅ Estilos globales (Tailwind y personalizados)
-import './globals.css';
-
-// 🎨 Configuramos Montserrat como variable CSS
+// Configuramos la fuente Montserrat para usarla como variable CSS
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-montserrat' // Esta clase se aplica luego en el <body>
+  subsets: ['latin'],               // Subconjunto latino para caracteres en español
+  weight: ['400', '600', '700'],   // Pesos de la fuente que se usarán en el proyecto
+  variable: '--font-montserrat'    // Nombre de la variable que se usará en el body
 });
 
-// 📄 Metadatos SEO del sitio
+// Definimos los metadatos para el proyecto (SEO)
 export const metadata = {
-  title: 'Inscripciones a Talleres',
+  title: 'Inscripciones a Talleres',  // Título que aparece en la pestaña del navegador
   description: 'SPA para visualizar inscripciones en Raíces Digitales',
 };
 
-// 🧱 Componente raíz que envuelve todas las páginas
+// Componente layout que envuelve todo el sitio web
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
-      <body className={`${montserrat.variable} bg-white text-gray-900`}>
-        {/* 📌 Encabezado fijo en todas las páginas */}
-        <Header />
-
-        {/* 🧩 Contenido que cambia según la ruta */}
-        <main className="min-h-screen p-4">{children}</main>
-
-        {/* 📌 Pie de página fijo */}
-        <Footer />
+    <html lang="es">{/* Idioma del sitio configurado en español */}
+      <body className={montserrat.variable}> 
+       <Header /> 
+        {children}
+       <Footer /> 
       </body>
     </html>
   );
