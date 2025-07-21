@@ -21,7 +21,6 @@ export default function Home() {
           resTall.json()
         ]);
 
-        // 👇 Esta es la corrección clave
         const inscripcionesCompletas = dataInsc ? Object.values(dataInsc).filter(item => item !== null) : [];
         const arregloTalleres = dataTall ? Object.values(dataTall).filter(item => item !== null) : [];
 

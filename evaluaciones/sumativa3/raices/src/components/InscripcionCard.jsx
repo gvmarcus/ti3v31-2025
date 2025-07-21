@@ -1,19 +1,21 @@
-export default function InscriptionItem({ data = {} }) {
-  const {
-    nombre = "Sin nombre",
-    correo = "Sin correo",
-    taller = {},
-  } = data;
-
+export default function InscriptionCard({ nombres, apellidos, correo, tallerNombre, tallerDescripcion, tallerProfesor }) {
   return (
-    <div className="bg-white p-4 rounded-2xl shadow-md">
-      <h2 className="text-xl font-semibold text-indigo-700">{nombre}</h2>
-      <p className="text-sm text-gray-700">{correo}</p>
-      <div className="mt-2">
-        <h3 className="font-bold text-gray-800">{taller.nombre || "Taller no encontrado"}</h3>
-        <p className="text-gray-600 text-sm">{taller.descripcion || "Sin descripción"}</p>
-        <p className="text-sm text-indigo-600 mt-1">Profesor: {taller.profesor || "Sin profesor"}</p>
-      </div>
+    <div className="tarjeta">
+      <h3 className="text-lg font-semibold" style={{ fontFamily: 'var(--fuente-titulos)', color: 'var(--color-primario)' }}>
+        {nombres} {apellidos}
+      </h3>
+      <p style={{ fontFamily: 'var(--fuente-texto)' }}>
+        <span className="font-bold">Correo:</span> {correo}
+      </p>
+      <p style={{ fontFamily: 'var(--fuente-texto)' }}>
+        <span className="font-bold">Taller:</span> {tallerNombre}
+      </p>
+      <p style={{ fontFamily: 'var(--fuente-texto)' }}>
+        <span className="font-bold">Descripción:</span> {tallerDescripcion}
+      </p>
+      <p style={{ fontFamily: 'var(--fuente-texto)' }}>
+        <span className="font-bold">Profesor:</span> {tallerProfesor}
+      </p>
     </div>
   );
 }
